@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    box-sizing: border-box;
+     background-color: black;
+     justify-content: center;
+     align-items: center;
+     color: white;
+     height: 100vh;
+}
+
+.batterybody{
+    width: 15rem;
+    height: 8rem;
+    border: solid 0.5rem;
+    border-radius: 1rem;
+    background-color: transparent;
+}
+
+#zshape{
+font-size: 50rem;
+position: absolute;
+z-index: 1;
+transform: translate(120%, -140%);
+}
+
+.batterytop{
+    width: 11%;
+    height: 40%;
+    position: relative;
+   left: 100%;
+   top: -68%;
+    border: solid 0.6rem;
+    border-top-right-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+}
+
+.batterycharge{
+    width: 100%;
+    border-radius: 5%;
+    height: 100% ;
+    background-color: transparent;
+    animationcount direction fill-mode;
+    animation: charge 4s linear infinite alternate , normal;
+}
+
+
+@keyframes charge{ 0%{width: 0%;
+    background-color: red;}
+    10%{width: 10%;
+        background-color: red;}
+        20%{width: 20%;
+            background-color: yellow;}
+            50%{width: 50%;
+                background-color: lime;}
+                75%{width: 75%;
+                    background-color: green;}
+                    100%{width: 100%;
+                        background-color: green;}
+}
